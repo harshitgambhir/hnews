@@ -17,9 +17,9 @@ export default function Home(props) {
       if(!query.lang){
         return
       }
-      let url = `https://gnews.io/api/v4/top-headlines?token=4e4d076bcc47722a313286a882018f3f&lang=${query.lang.value}&country=in`
+      let url = `https://gnews.io/api/v4/top-headlines?token=a48088fbe37401f097eae43d1d863f95&lang=${query.lang.value}&country=in`
       if(query.q){
-        url = `https://gnews.io/api/v4/search?q=${query.q}&token=4e4d076bcc47722a313286a882018f3f&lang=${query.lang.value}&country=in`
+        url = `https://gnews.io/api/v4/search?q=${query.q}&token=a48088fbe37401f097eae43d1d863f95&lang=${query.lang.value}&country=in`
       }
       const res = await fetch(url)
       if (res.status !== 200) {
